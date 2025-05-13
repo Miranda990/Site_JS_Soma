@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula JS</title>
+
+    <script>
+        function EnviaMsg()
+        {
+            /*alert("Oi, tudo bem" + document.getElementById("nome").value + "?");
+            /*aqui o documento pega o elemento (id) "nome e o chama para completar a frase"*/
+
+            alert("Oi, tudo bem" + document.getElementById("name").value + "?");
+            document.getElementById("resultado").innerHTML = document.getElementById("nome").value;
+        }
+
+        function Msg2()
+        {
+            alert("Seu nome é" + document.getElementById("nome").value + "!");
+            document.getElementById("resultado2").innerHTML = document.getElementById("nome").value;
+        }
+    </script>
+
+</head>
+<body>
+    <input type="text" name="name" id="name">
+    <button type="button" onclick="EnviaMsg()">Enviar</button>
+    <p id="resultado"></p>
+
+    <input type="text" name="nome" id="nome">
+    <button type="button" onclick="Msg2()">Enviar</button>
+    <p id="resultado2"></p>
+</body>
+</html>
